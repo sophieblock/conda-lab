@@ -1,4 +1,4 @@
-# Comparison: austenstone/.vscode vs conda-lab AI Setup
+# Comparison (deprecated)
 
 This document compares the AI configuration from austenstone/.vscode with conda-lab's implementation.
 
@@ -69,27 +69,27 @@ This document compares the AI configuration from austenstone/.vscode with conda-
 
 ### What We Kept
 
-✅ Core Copilot chat features  
-✅ MCP discovery settings  
-✅ Agent architecture with handoffs  
-✅ GitHub Actions patterns  
-✅ Tool auto-approval settings  
+✅ Core Copilot chat features
+✅ MCP discovery settings
+✅ Agent architecture with handoffs
+✅ GitHub Actions patterns
+✅ Tool auto-approval settings
 
 ### What We Adapted
 
-🔧 **MCP Servers**: Minimal set focused on GitHub + utilities  
-🔧 **Plan Agent**: Conda-specific research and planning logic  
-🔧 **Instructions**: Domain-specific for conda packaging  
-🔧 **Language Settings**: Python, YAML, Markdown optimized for conda  
+🔧 **MCP Servers**: Minimal set focused on GitHub + utilities
+🔧 **Plan Agent**: Conda-specific research and planning logic
+🔧 **Instructions**: Domain-specific for conda packaging
+🔧 **Language Settings**: Python, YAML, Markdown optimized for conda
 
 ### What We Skipped
 
-❌ Azure-specific settings (not applicable)  
-❌ Chrome DevTools MCP (not needed)  
-❌ Firecrawl MCP (not needed)  
-❌ Playwright MCP (not needed)  
-❌ Context7 MCP (not applicable)  
-❌ Advanced inline edits config (experimental features)  
+❌ Azure-specific settings (not applicable)
+❌ Chrome DevTools MCP (not needed)
+❌ Firecrawl MCP (not needed)
+❌ Playwright MCP (not needed)
+❌ Context7 MCP (not applicable)
+❌ Advanced inline edits config (experimental features)
 
 ## Custom Additions for conda-lab
 
@@ -251,7 +251,7 @@ Instructions in Markdown
 
 Based on austenstone's config, we could add:
 
-1. **More MCP Servers**: 
+1. **More MCP Servers**:
    - Data store for recipe database
    - Sequential thinking for complex debugging
 
