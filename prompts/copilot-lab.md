@@ -25,7 +25,7 @@ What's wrong and how do I fix it?
 
 ```
 Add conda-build variants to this meta.yaml to build for 
-Python 3.9, 3.10, and 3.11. Show the conda_build_config.yaml too.
+Python 3.10 and 3.11. Show the conda_build_config.yaml too.
 ```
 
 ## Plugin Development Prompts

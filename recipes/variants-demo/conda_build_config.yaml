@@ -2,7 +2,6 @@
 # This file defines the build matrix for variants-demo
 
 python:
-  - 3.9
   - 3.10
   - 3.11
 

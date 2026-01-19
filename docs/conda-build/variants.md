@@ -9,7 +9,7 @@ Variants create a build matrix from `conda_build_config.yaml`:
 ```yaml
 # conda_build_config.yaml
 python:
-  - 3.9
+  - 3.10
   - 3.10
   - 3.11
 
@@ -60,7 +60,7 @@ System-wide: `~/miniforge3/conda_build_config.yaml`
 ```yaml
 # All recipes use these by default
 python:
-  - 3.9
+  - 3.10
   - 3.10
   - 3.11
 ```
@@ -87,7 +87,7 @@ Build only specific combinations:
 
 ```yaml
 python:
-  - 3.9
+  - 3.10
   - 3.10
 
 numpy:
@@ -100,7 +100,7 @@ zip_keys:
 ```
 
 Result: **2 builds** instead of 4:
-- Python 3.9 + NumPy 1.24
+- Python 3.10 + NumPy 1.24
 - Python 3.10 + NumPy 1.26
 
 ### Pin Run Exports
@@ -110,7 +110,7 @@ Control runtime dependencies:
 ```yaml
 pin_run_as_build:
   python:
-    min_pin: x.x    # e.g., >=3.9,<3.10
+    min_pin: x.x    # e.g., >=3.10,<3.10
     max_pin: x.x
   numpy:
     min_pin: x.x
@@ -153,8 +153,8 @@ conda render recipes/mypackage/ --variants
 
 Output:
 ```
-python=3.9, numpy=1.24
-python=3.9, numpy=1.26
+python=3.10, numpy=1.24
+python=3.10, numpy=1.26
 python=3.10, numpy=1.24
 ...
 ```
@@ -186,7 +186,7 @@ conda build recipes/variants-demo/ --variants '{"python": "3.11"}'
 
 ```yaml
 python:
-  - 3.9
+  - 3.10
   - 3.10
   - 3.11
 

@@ -121,7 +121,7 @@ conda build recipes/hello-python/
 
 ### variants-demo
 Demonstrates conda-build variants:
-- Multiple Python versions (3.9, 3.10, 3.11)
+- Multiple Python versions (3.10, 3.11)
 - Multiple numpy versions
 - Custom variant dimensions
 - Build string customization

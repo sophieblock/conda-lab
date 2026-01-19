@@ -10,5 +10,5 @@ setup(
             "hello-python=hello_python:main",
         ],
     },
-    python_requires=">=3.8",
+    python_requires=">=3.10",
 )
