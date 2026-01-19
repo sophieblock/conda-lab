@@ -1,0 +1,25 @@
+name: conda-lab-build
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - conda-build>=3.27.0
+  - conda-verify
+  - anaconda-client
+  # Compilers for macOS arm64
+  - clang
+  - clang_osx-arm64
+  - clangxx_osx-arm64
+  - c-compiler
+  - cxx-compiler
+  # Build tools
+  - make
+  - cmake
+  - pkg-config
+  - patch
+
+# Platform: macOS arm64 (Apple Silicon)
+# Usage: conda env create -f envs/build.yml
+# Activate: conda activate conda-lab-build
+# Purpose: Building conda packages with native compilers

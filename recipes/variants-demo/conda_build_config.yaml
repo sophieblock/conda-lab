@@ -1,0 +1,29 @@
+# Conda build variants configuration
+# This file defines the build matrix for variants-demo
+
+python:
+  - 3.9
+  - 3.10
+  - 3.11
+
+numpy:
+  - 1.24
+  - 1.26
+
+variant_name:
+  - standard
+  - optimized
+
+# Pin run_exports for compatibility
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+  numpy:
+    min_pin: x.x
+    max_pin: x.x
+
+# Zip together related variants (optional)
+# zip_keys:
+#   - python
+#   - numpy

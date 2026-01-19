@@ -1,0 +1,52 @@
+{
+  "folders": [
+    {
+      "name": "conda-lab (root)",
+      "path": ".."
+    },
+    {
+      "name": "recipes",
+      "path": "../recipes"
+    },
+    {
+      "name": "plugins",
+      "path": "../plugins"
+    },
+    {
+      "name": "docs",
+      "path": "../docs"
+    },
+    {
+      "name": "envs",
+      "path": "../envs"
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${env:CONDA_PREFIX}/bin/python",
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/.pytest_cache": true,
+      "**/*.egg-info": true,
+      "**/build": true,
+      "**/dist": true
+    },
+    "files.associations": {
+      "*.yaml": "yaml",
+      "meta.yaml": "yaml",
+      "conda_build_config.yaml": "yaml"
+    },
+    "editor.formatOnSave": false,
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "python.formatting.provider": "black"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "redhat.vscode-yaml",
+      "charliermarsh.ruff"
+    ]
+  }
+}

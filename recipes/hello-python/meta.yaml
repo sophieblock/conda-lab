@@ -1,0 +1,42 @@
+{% set name = "hello-python" %}
+{% set version = "1.0.0" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  path: .
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python >=3.8
+    - pip
+    - setuptools
+  run:
+    - python >=3.8
+
+test:
+  imports:
+    - hello_python
+  commands:
+    - hello-python --help
+
+about:
+  home: https://github.com/sophieblock/conda-lab
+  summary: 'Simple Python package for testing noarch conda builds'
+  description: |
+    A minimal Python package demonstrating:
+    - noarch: python builds
+    - Entry points / console scripts
+    - Pure Python packaging
+  license: MIT
+
+extra:
+  recipe-maintainers:
+    - sophieblock
