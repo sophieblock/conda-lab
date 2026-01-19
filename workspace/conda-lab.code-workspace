@@ -39,7 +39,15 @@
     "editor.formatOnSave": false,
     "python.linting.enabled": true,
     "python.linting.ruffEnabled": true,
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "github.copilot.chat.anthropic.tools.websearch.enabled": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestArgs": [
+      "recipes",
+      "plugins"
+    ],
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true
   },
   "extensions": {
     "recommendations": [
