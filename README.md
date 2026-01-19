@@ -352,6 +352,30 @@ This is a personal learning repository, but suggestions and improvements are wel
 - **experiments.md**: Experiment log and findings
 - **prompts/**: Useful prompts for AI assistants
 
+## 🤖 AI-Powered Development
+
+This repository includes advanced AI assistance for conda development:
+
+### Features
+- 🧠 **Custom Copilot Agents** - Specialized planning for conda tasks
+- 📋 **Auto-Applied Instructions** - Best practices for recipes, plugins, CI/CD
+- 🔌 **MCP Server Integration** - GitHub tools, time operations, sequential thinking
+- ⚙️ **Optimized Settings** - 100+ Copilot enhancements for conda workflows
+
+### Quick Start
+```
+@Plan Create a conda recipe for my-package
+@workspace Review this recipe against conda-forge best practices
+```
+
+### Documentation
+- **[AI Setup Guide](.github/AI-SETUP.md)** - Complete usage documentation
+- **[Enhancement Summary](.github/ENHANCEMENT-SUMMARY.md)** - What's included
+- **[Workspace Settings](.github/WORKSPACE-SETTINGS.md)** - Settings architecture
+- **[Comparison](.github/COMPARISON.md)** - Based on austenstone/.vscode
+
+**New to AI-assisted conda development?** Start with [AI-SETUP.md](.github/AI-SETUP.md)!
+
 ## 🔗 References
 
 ### Official Documentation
