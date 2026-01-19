@@ -27,9 +27,8 @@ conda-bld/
 .conda/
 envs/*/
 
-# VS Code
-.vscode/settings.json
-.vscode/tasks.json
+# VS Code (keep settings.json for shared AI config, ignore personal configs)
+# .vscode/settings.json  # Committed for AI setup
 .vscode/launch.json
 .vscode/extensions.json
 *.code-workspace.backup

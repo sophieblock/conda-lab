@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(code:*)",
+      "Bash(rm:*)",
+      "Bash(conda activate:*)",
+      "Bash(conda build:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
+    ]
+  }
+}
