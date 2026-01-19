@@ -37,9 +37,6 @@
       "conda_build_config.yaml": "yaml"
     },
     "editor.formatOnSave": false,
-    "python.linting.enabled": true,
-    "python.linting.ruffEnabled": true,
-    "python.formatting.provider": "black",
     "github.copilot.chat.anthropic.tools.websearch.enabled": true,
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": true,
