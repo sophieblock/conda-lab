@@ -1,0 +1,37 @@
+{% set name = "hello-c" %}
+{% set version = "1.0.0" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  path: .
+
+build:
+  number: 0
+  skip: True  # [not osx or not arm64]
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+  run:
+
+test:
+  commands:
+    - hello-c
+
+about:
+  home: https://github.com/sophieblock/conda-lab
+  summary: 'Simple C hello world for testing conda-build with compilers'
+  description: |
+    A minimal C program demonstrating:
+    - Compiler usage in conda recipes
+    - Platform-specific builds (macOS arm64)
+    - Native executable packaging
+  license: MIT
+
+extra:
+  recipe-maintainers:
+    - sophieblock

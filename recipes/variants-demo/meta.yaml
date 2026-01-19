@@ -1,0 +1,44 @@
+{% set name = "variants-demo" %}
+{% set version = "0.1.0" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  path: .
+
+build:
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
+  string: py{{ py }}_{{ variant_name }}_{{ PKG_BUILDNUM }}
+
+requirements:
+  host:
+    - python
+    - pip
+    - setuptools
+  run:
+    - python
+    - numpy {{ numpy }}
+
+test:
+  imports:
+    - variants_demo
+  commands:
+    - variants-demo --info
+
+about:
+  home: https://github.com/sophieblock/conda-lab
+  summary: 'Demonstrates conda-build variants and build matrices'
+  description: |
+    This package demonstrates conda-build variants:
+    - Multiple Python versions
+    - Multiple numpy versions
+    - Custom variant dimensions
+    - Build string customization
+  license: MIT
+
+extra:
+  recipe-maintainers:
+    - sophieblock

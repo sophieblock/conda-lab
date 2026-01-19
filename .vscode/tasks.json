@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "conda: build hello-python",
+			"type": "shell",
+			"command": "conda activate conda-lab-build && conda build recipes/hello-python/",
+			"problemMatcher": []
+		},
+		{
+			"label": "conda: build hello-c",
+			"type": "shell",
+			"command": "conda activate conda-lab-build && conda build recipes/hello-c/",
+			"problemMatcher": []
+		},
+		{
+			"label": "conda: render variants-demo",
+			"type": "shell",
+			"command": "conda activate conda-lab-build && conda render recipes/variants-demo/",
+			"problemMatcher": []
+		}
+	]
+}

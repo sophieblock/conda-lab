@@ -1,0 +1,31 @@
+name: conda-lab-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - conda>=23.1.0
+  - conda-build>=3.27.0
+  - pip
+  - git
+  - jq
+  - ripgrep
+  # Development tools
+  - ipython
+  - jupyter
+  - pytest
+  - pytest-cov
+  - black
+  - ruff
+  - mypy
+  # Documentation
+  - mkdocs
+  - mkdocs-material
+  # Plugin development
+  - pluggy
+  - pip:
+    - pre-commit
+
+# Platform: macOS arm64 (Apple Silicon)
+# Usage: conda env create -f envs/dev.yml
+# Activate: conda activate conda-lab-dev

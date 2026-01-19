@@ -1,0 +1,35 @@
+{
+  // Python Settings (conda environments)
+  "python.terminal.useEnvFile": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  
+  // YAML Settings (conda recipe files)
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  
+  // Editor Settings
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 2,
+  
+  // Terminal Settings (macOS/zsh default)
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  
+  // Custom Words for conda-lab
+  "cSpell.userWords": [
+    "conda",
+    "condabuild",
+    "condaforge",
+    "mamba",
+    "miniforge",
+    "noarch",
+    "pyproject"
+  ]
+}
