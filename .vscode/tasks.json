@@ -2,45 +2,22 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "conda-build: current recipe",
-			"type": "shell",
-			"command": "zsh",
-			"args": [
-				"-lc",
-				"source \"$(conda info --base)/etc/profile.d/conda.sh\" && conda activate conda-lab-build && recipe_dir=\"${fileDirname}\" && while [ \"$recipe_dir\" != \"/\" ] && [ ! -f \"$recipe_dir/meta.yaml\" ]; do recipe_dir=\"$(dirname \"$recipe_dir\")\"; done && if [ ! -f \"$recipe_dir/meta.yaml\" ]; then echo 'No meta.yaml found upward from ${file}'; exit 1; fi && echo \"Building recipe at $recipe_dir\" && conda build \"$recipe_dir\""
-			],
-			"problemMatcher": [],
-			"presentation": {
-				"reveal": "always"
-			}
-		},
-		{
 			"label": "conda: build hello-python",
 			"type": "shell",
-			"command": "source \"$(conda info --base)/etc/profile.d/conda.sh\" && conda activate conda-lab-build && conda build recipes/hello-python/",
-			"problemMatcher": [],
-			"group": "build"
+			"command": "conda activate conda-lab-build && conda build recipes/hello-python/",
+			"problemMatcher": []
 		},
 		{
 			"label": "conda: build hello-c",
 			"type": "shell",
-			"command": "source \"$(conda info --base)/etc/profile.d/conda.sh\" && conda activate conda-lab-build && conda build recipes/hello-c/",
-			"problemMatcher": [],
-			"group": "build"
+			"command": "conda activate conda-lab-build && conda build recipes/hello-c/",
+			"problemMatcher": []
 		},
 		{
 			"label": "conda: render variants-demo",
 			"type": "shell",
-			"command": "source \"$(conda info --base)/etc/profile.d/conda.sh\" && conda activate conda-lab-build && conda render recipes/variants-demo/ --variants",
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "conda: build variants-demo",
-			"type": "shell",
-			"command": "source \"$(conda info --base)/etc/profile.d/conda.sh\" && conda activate conda-lab-build && conda build recipes/variants-demo/",
-			"problemMatcher": [],
-			"group": "build"
+			"command": "conda activate conda-lab-build && conda render recipes/variants-demo/",
+			"problemMatcher": []
 		}
 	]
 }

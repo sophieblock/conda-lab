@@ -35,24 +35,13 @@
       "*.yaml": "yaml",
       "meta.yaml": "yaml",
       "conda_build_config.yaml": "yaml"
-    },
-    "editor.formatOnSave": false,
-    "github.copilot.chat.anthropic.tools.websearch.enabled": true,
-    "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": true,
-    "python.testing.pytestArgs": [
-      "recipes",
-      "plugins"
-    ],
-    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
-    "chat.renderRelatedFiles": true
+    }
   },
   "extensions": {
     "recommendations": [
       "ms-python.python",
       "ms-python.vscode-pylance",
-      "redhat.vscode-yaml",
-      "charliermarsh.ruff"
+      "redhat.vscode-yaml"
     ]
   }
 }

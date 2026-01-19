@@ -10,21 +10,27 @@ Variants create a build matrix from `conda_build_config.yaml`:
 # conda_build_config.yaml
 python:
   - 3.10
-  - 3.10
   - 3.11
+  - 3.12
+  - 3.13
+  - 3.14
 
 numpy:
   - 1.24
   - 1.26
 ```
 
-This creates **6 builds** (3 Python × 2 NumPy):
-- `mypackage-1.0-py39_numpy124_0.tar.bz2`
-- `mypackage-1.0-py39_numpy126_0.tar.bz2`
+This creates **10 builds** (5 Python × 2 NumPy):
 - `mypackage-1.0-py310_numpy124_0.tar.bz2`
 - `mypackage-1.0-py310_numpy126_0.tar.bz2`
 - `mypackage-1.0-py311_numpy124_0.tar.bz2`
 - `mypackage-1.0-py311_numpy126_0.tar.bz2`
+- `mypackage-1.0-py312_numpy124_0.tar.bz2`
+- `mypackage-1.0-py312_numpy126_0.tar.bz2`
+- `mypackage-1.0-py313_numpy124_0.tar.bz2`
+- `mypackage-1.0-py313_numpy126_0.tar.bz2`
+- `mypackage-1.0-py314_numpy124_0.tar.bz2`
+- `mypackage-1.0-py314_numpy126_0.tar.bz2`
 
 ## Basic Usage
 
@@ -153,9 +159,9 @@ conda render recipes/mypackage/ --variants
 
 Output:
 ```
-python=3.10, numpy=1.24
+python=3.10-3.14, numpy=1.24-1.26
 python=3.10, numpy=1.26
-python=3.10, numpy=1.24
+python=3.10-3.14, numpy=1.24-1.26
 ...
 ```
 

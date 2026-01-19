@@ -1,62 +1,5 @@
 {
-  // GitHub Copilot Chat Settings
-  "github.copilot.chat.agent.thinkingTool": true,
-  "github.copilot.chat.codesearch.enabled": true,
-  "github.copilot.chat.editor.temporalContext.enabled": true,
-  "github.copilot.chat.edits.temporalContext.enabled": true,
-  "github.copilot.chat.generateTests.codeLens": true,
-  "github.copilot.chat.reviewSelection.enabled": true,
-  "github.copilot.chat.setupTests.enabled": true,
-  "github.copilot.chat.startDebugging.enabled": true,
-  "github.copilot.chat.useProjectTemplates": true,
-  "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": true,
-  "github.copilot.chat.edits.suggestRelatedFilesForTests": true,
-  "github.copilot.chat.summarizeAgentConversationHistory.enabled": true,
-  "github.copilot.chat.anthropic.thinking.enabled": true,
-  
-  // GitHub Copilot Editor Settings
-  "github.copilot.editor.enableCodeActions": true,
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": true,
-    "yaml": true,
-    "plaintext": false,
-    "scminput": false
-  },
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.nextEditSuggestions.fixes": true,
-  "github.copilot.renameSuggestions.triggerAutomatically": true,
-  
-  // Chat & Todo Settings
-  "chat.agent.maxRequests": 100,
-  "chat.editing.autoAcceptDelay": 5,
-  "chat.renderRelatedFiles": true,
-  "chat.tools.autoApprove": true,
-  "chat.todoListTool.enabled": true,
-  "chat.agent.showThinking": true,
-  "chat.checkpoints.showFileChanges": true,
-  "chat.math.enabled": true,
-  "chat.mcp.autostart": "newAndOutdated",
-  "chat.mcp.access": "all",
-  "chat.tools.global.autoApprove": true,
-  "chat.customAgentInSubagent.enabled": true,
-  "chat.useNestedAgentsMdFiles": true,
-  
-  // MCP Server Settings
-  "chat.mcp.discovery.enabled": {
-    "claude-desktop": true,
-    "windsurf": true,
-    "cursor-global": true,
-    "cursor-workspace": true
-  },
-  
-  // Editor Settings
-  "editor.inlineSuggest.enabled": true,
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
-  
-  // Python Settings (conda-specific)
+  // Python Settings (conda environments)
   "python.terminal.useEnvFile": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
@@ -68,31 +11,16 @@
   
   // YAML Settings (conda recipe files)
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
   
-  // Markdown Settings
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "on"
-  },
+  // Editor Settings
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 2,
   
-  // Git Settings
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.openRepositoryInParentFolders": "always",
-  
-  // Terminal Settings
+  // Terminal Settings (macOS/zsh default)
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontFamily": "monospace",
-  
-  // Workspace Settings
-  "workbench.startupEditor": "none",
-  "workbench.tree.renderIndentGuides": "always",
-  "security.workspace.trust.untrustedFiles": "open",
   
   // Custom Words for conda-lab
   "cSpell.userWords": [
@@ -100,10 +28,8 @@
     "condabuild",
     "condaforge",
     "mamba",
-    "micromamba",
+    "miniforge",
     "noarch",
-    "pyproject",
-    "setuptools"
-  ],
-  "robotcode.disableExtension": true
+    "pyproject"
+  ]
 }
