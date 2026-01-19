@@ -23,7 +23,10 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 
-# Zip together related variants (optional)
-# zip_keys:
-#   - python
-#   - numpy
+# Zip together related variants so that matching entries are paired
+# (e.g., python[0] with numpy[0], python[1] with numpy[1]). If you omit
+# zip_keys entirely, conda-build will use the full cross-product of all
+# python and numpy versions instead.
+zip_keys:
+  - python
+  - numpy
