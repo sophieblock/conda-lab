@@ -12,6 +12,18 @@ This repository is a **learning sandbox** for:
 - 🔬 **Testing reproducibility strategies** (lock files, explicit specs)
 - 🍎 **macOS arm64 specifics** (Miniforge, Apple Silicon, native builds)
 
+## 🚫 What This Is NOT
+
+- **Not a CI/CD pipeline** — No publishing, uploading, or distribution workflows
+- **Not a fork** — Treats conda/conda-build as black-box executables
+- **Not a framework** — Lightweight sandbox for learning, not production tooling
+- **Not general-purpose** — Focused on macOS arm64 with Miniforge
+
+## 💡 Core Principle
+
+**Treat conda/conda-build as executables** (black boxes we call).  
+**Study recipes, plugins, and docs** (white boxes we experiment with).
+
 ## 📁 Repository Structure
 
 ```
